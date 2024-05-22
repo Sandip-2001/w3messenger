@@ -1,0 +1,72 @@
+{
+  "name": "w3messenger_frontend",
+  "version": "0.1.0",
+  "description": "Internet Computer starter application",
+  "keywords": [
+    "Internet Computer",
+    "Motoko",
+    "JavaScript",
+    "Canister"
+  ],
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack serve --mode development --env development"
+  },
+  "devDependencies": {
+    "@dfinity/agent": "^0.15.1",
+    "@dfinity/candid": "^0.15.1",
+    "@dfinity/principal": "^0.15.1",
+    "assert": "2.0.0",
+    "buffer": "6.0.3",
+    "events": "3.3.0",
+    "html-webpack-plugin": "5.5.0",
+    "process": "0.11.10",
+    "stream-browserify": "3.0.0",
+    "terser-webpack-plugin": "^5.3.3",
+    "ts-loader": "^9.4.1",
+    "typescript": "^4.8.4",
+    "util": "0.12.4",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.8.1"
+  },
+  "engines": {
+    "node": "^12 || ^14 || ^16 || ^18"
+  },
+  "browserslist": [
+    "last 2 chrome version",
+    "last 2 firefox version",
+    "last 2 safari version",
+    "last 2 edge version"
+  ],
+  "dependencies": {
+    "@dfinity/assets": "^0.15.1",
+    "@dfinity/auth-client": "^0.15.1",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/icons-material": "^5.10.9",
+    "@mui/material": "^5.10.12",
+    "@mui/styled-engine-sc": "^5.10.6",
+    "axios": "^1.2.2",
+    "browser-image-compression": "^2.0.0",
+    "css-loader": "^6.7.1",
+    "dayjs": "^1.11.7",
+    "file-loader": "^6.2.0",
+    "file-saver": "^2.0.5",
+    "isomorphic-fetch": "^3.0.0",
+    "js-file-download": "^0.4.12",
+    "lodash.groupby": "^4.6.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.39.1",
+    "react-linkify": "^1.0.0-alpha",
+    "react-router-dom": "^6.4.3",
+    "react-transition-group": "^4.4.5",
+    "sass-loader": "^13.1.0",
+    "scss-loader": "^0.0.1",
+    "style-loader": "^3.3.1",
+    "styled-components": "^5.3.6",
+    "url-loader": "^4.1.1",
+    "zx": "^7.1.1"
+  }
+}

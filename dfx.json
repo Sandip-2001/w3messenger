@@ -1,0 +1,50 @@
+{
+  "canisters": {
+    "w3messenger_backend": {
+      "main": "src/w3messenger_backend/main.mo",
+      "type": "motoko"
+    },
+    "myAccount": {
+      "main": "src/my_account/myAccount.mo",
+      "type": "motoko"
+    },
+    "w3messenger_frontend": {
+      "dependencies": [
+        "w3messenger_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/w3messenger_frontend/src/index.html"
+      },
+      "source": [
+        "src/w3messenger_frontend/assets",
+        "dist/w3messenger_frontend/"
+      ],
+      "type": "assets"
+    },
+    "internet-identity": {
+      "type": "custom",
+      "wasm": "src/internet-identity/internet-identity.wasm",
+      "build": [],
+      "candid": "src/internet-identity/internet-identity.did",
+      "remote": {
+        "id": {
+          "ic": "fgte5-ciaaa-aaaad-aaatq-cai"
+        }
+      }
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "dfx": "0.12.1",
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000",
+      "type": "ephemeral"
+    }
+  },
+  "version": 1
+}
